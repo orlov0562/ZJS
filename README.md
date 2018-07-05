@@ -70,6 +70,13 @@ Z.find('body').append('<strong style="color:red;">Hello world</strong>');
 ```
 @return instanse of Z
 
+### Prepend html
+```
+Z.find('body').prepend('<strong style="color:red;">Hello world</strong>');
+```
+@return instanse of Z
+
+
 ### Get inner HTML
 ```
 Z.find('body').html();
@@ -100,6 +107,19 @@ Set only text so the body will contain text without "div" tag, only "Hello world
 var div = Z.create('div')
 ```
 @return instanse of Z
+
+### DOM ready event
+```
+Z.ready(function(){
+  console.log('DOM Ready');
+});
+```
+if you need some pause after DOM loaded, pass micrseconds as second parameter
+```
+Z.ready(function(){
+  console.log('DOM Ready and 3 seconds pass');
+}, 3000);
+```
 
 ## More complex examples
 
