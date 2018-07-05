@@ -106,7 +106,7 @@ var div = Z.create('div')
 ### Create element with a text and append it to body
 ```
 var div = Z.create('div').html('<strong style="color:red;">Hello world</strong>');
-Z.find(body).append(div.html());
+Z.find('body').append(div.html());
 ```
 @return instanse of Z
 
