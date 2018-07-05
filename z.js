@@ -79,4 +79,12 @@ class Z {
   removeClass(className){this.el.classList.remove(className);return this;}
   toggleClass(className){this.el.classList.toggle(className);return this;}
   hasClass(className){return this.el.classList.contains(className);}
+  
+  static onDomReady(func) {
+      var domReadyFunc = function(){
+          document.removeEventListener( "DOMContentLoaded", domReadyFunc, false );
+          func();
+      };
+      document.addEventListener("DOMContentLoaded", domReadyFunc, false );
+  }  
 };
