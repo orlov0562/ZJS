@@ -114,7 +114,7 @@ Z.ready(function(){
   console.log('DOM Ready');
 });
 ```
-if you need some pause after DOM loaded, pass micrseconds as second parameter
+if you need some pause after DOM loaded, pass microseconds as second parameter
 ```
 Z.ready(function(){
   console.log('DOM Ready and 3 seconds pass');
