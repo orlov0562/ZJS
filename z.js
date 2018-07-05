@@ -46,6 +46,11 @@ class Z {
     this.el.innerHTML += innerHTML;
     return this;
   }
+  
+  prepend(innerHTML) {
+      this.el.innerHTML = innerHTML + this.el.innerHTML;
+      return this;
+  }  
 
   html(innerHTML) {
     if (typeof innerHTML == 'undefined') {
@@ -80,11 +85,16 @@ class Z {
   toggleClass(className){this.el.classList.toggle(className);return this;}
   hasClass(className){return this.el.classList.contains(className);}
   
-  static onDomReady(func) {
+  static ready(func, timeout) {
       var domReadyFunc = function(){
-          document.removeEventListener( "DOMContentLoaded", domReadyFunc, false );
-          func();
+          document.removeEventListener("DOMContentLoaded", domReadyFunc, false);
+          if (typeof timeout != 'undefined') {
+              setTimeout(func, timeout);
+          } else {
+              func();
+          }
       };
-      document.addEventListener("DOMContentLoaded", domReadyFunc, false );
-  }  
+      document.addEventListener("DOMContentLoaded", domReadyFunc, false);
+  }
+  
 };
