@@ -100,7 +100,8 @@ Z.find('body').text();
 Z.find('body').text('<strong style="color:red;">Hello world</strong>');
 ```
 @return instanse of Z
-Set only text so the body will contain text without "div" tag, only "Hello world"
+
+This function set only text so the body will contain text without "div" tag, only "Hello world"
 
 ### Create element by tagName
 ```
