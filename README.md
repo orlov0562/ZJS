@@ -5,7 +5,7 @@ Mini JS helper that I use when I dont want include Jquery
 
 ### Find set of elements
 ```
-Z.findAll('body')
+Z.findAll('a')
 ```
 @return array with instanses of Z
 
@@ -19,7 +19,7 @@ Z.findOne('body')
 
 ### Find single element and get its length
 ```
-Z.find('a').el.length
+Z.find('body').el.length
 ```
 @return array with instanses of Z OR empty array if not found
 
