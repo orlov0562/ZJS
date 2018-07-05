@@ -4,9 +4,9 @@ Mini JS helper that I use when I dont want include Jquery
 ## Basic usage
 
 ### Find set of elements
+@return array with instanses of Z
 ```
 Z.findAll('body')
-// @return array with instanses of Z
 ```
 
 ### Find single element
