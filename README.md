@@ -1,6 +1,8 @@
 # ZJS
 Mini JS helper that I use when I dont want include Jquery
 
+To minify JS, use one of minifiers from Google: (https://www.google.com/search?q=javascript+minifier)[https://www.google.com/search?q=javascript+minifier]
+
 ## Basic usage
 
 ### Find set of elements
