@@ -6,10 +6,7 @@ Project Author: Vitaliy Orlov
 
 class Z {
   constructor(el){
-    this.el = (typeof el != 'undefined')
-      				? el
-    					: document.createElement(null)
-    ;
+    this.el = (typeof el != 'undefined') ? el : document.createElement(null);
     return this;
   }
 
