@@ -1,3 +1,9 @@
+/**
+Project name: ZJS
+Project url: https://github.com/orlov0562/ZJS
+Project Author: Vitaliy Orlov
+**/
+
 class Z {
   constructor(el){
     this.el = (typeof el != 'undefined')
