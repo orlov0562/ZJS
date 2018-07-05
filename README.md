@@ -68,14 +68,45 @@ alert('yo');
 Z.find('body').append('<strong style="color:red;">Hello world</strong>');
 ```
 
+### Get inner HTML
+@return string
+```
+Z.find('body').html();
+```
+
+### Set inner HTML
+@return instanse of Z
+```
+Z.find('body').html('<strong style="color:red;">Hello world</strong>');
+```
+
+### Get inner Text
+@return string
+```
+Z.find('body').text();
+```
+
+### Set inner Text
+@return instanse of Z
+```
+Z.find('body').text('<strong style="color:red;">Hello world</strong>');
+```
+Set only text so the body will contain text without "div" tag, only "Hello world"
+
 ### Create element by tagName
+@return instanse of Z
+```
+var div = Z.create('div')
+```
+
+## More complex examples
+
+### Create element with a text and add it to body
 @return instanse of Z
 ```
 var div = Z.create('div').append('<strong style="color:red;">Hello world</strong>');
 Z.find(body).append(div.el.innerHtml);
 ```
-
-## More complex examples
 
 ### Append styles to header
 ```
