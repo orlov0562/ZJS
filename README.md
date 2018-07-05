@@ -19,7 +19,7 @@ Z.findOne('body')
 
 ### Find single element and get its length
 ```
-Z.find('body').el.length
+Z.find('a').el.length
 ```
 @return array with instanses of Z OR empty array if not found
 
