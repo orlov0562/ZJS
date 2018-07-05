@@ -19,11 +19,18 @@ Z.findOne('body')
 ```
 @return instanse of Z
 
+### Find single element and get its JS representation
+```
+console.dir( Z.find('body').el );
+```
+@return javascript object
+
+
 ### Find single element and get its length
 ```
 Z.find('body').el.length
 ```
-@return array with instanses of Z OR empty array if not found
+@return int
 
 ### Get attribute of the element
 ```
